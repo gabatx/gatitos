@@ -1,4 +1,4 @@
-## gatitos
+## Gatitos
 App basada en la API REST thecatapi.com
 
 Este texto describe una aplicación móvil que se basa en la API REST https://docs.thecatapi.com/. La aplicación utiliza el patrón de presentación MVVM y conecta con la API a través de Retrofit para mostrar los resultados obtenidos en un RecyclerView.
