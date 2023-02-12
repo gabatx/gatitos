@@ -1,0 +1,30 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/app_bar_search_buscar"
+            android:icon="@drawable/ic_baseline_search_24"
+            android:title="Search"
+            app:showAsAction="always|collapseActionView"
+            app:actionViewClass="androidx.appcompat.widget.SearchView"
+            tools:ignore="AlwaysShowAction,HardcodedText" />
+    <item
+            android:id="@+id/boton_ordenar_por_nombre"
+            android:title="@string/por_nombre"
+            android:icon="@android:drawable/ic_menu_today"
+            app:showAsAction="never" />
+
+    <item
+            android:id="@+id/boton_ordenar_por_pais"
+            android:title="@string/por_pais"
+            android:icon="@android:drawable/ic_menu_sort_alphabetically"
+            app:showAsAction="never" />
+
+    <item
+            android:id="@+id/boton_ordenar_por_exp_vida"
+            android:title="@string/por_exp_vida"
+            android:icon="@android:drawable/ic_menu_sort_by_size"
+            app:showAsAction="never" />
+
+</menu>

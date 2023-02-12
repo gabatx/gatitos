@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+            android:id="@+id/grupo1">
+        <item
+                android:id="@+id/nav_fragment_lista_todos"
+                android:icon="@drawable/gatito"
+                android:title="@string/gatos" />
+    </group>
+    <group
+            android:id="@+id/grupo2"
+            android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_fragment_votos"
+                android:icon="@drawable/ic_baseline_how_to_vote_24"
+                android:title="@string/votos" />
+    </group>
+
+    <group
+            android:id="@+id/grupo3"
+            android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_fragment_favoritos"
+                android:icon="@drawable/ic_baseline_favorite_24"
+                android:title="@string/favoritos" />
+    </group>
+
+</menu>

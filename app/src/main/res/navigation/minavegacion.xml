@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/minavegacion.xml"
+        app:startDestination="@id/nav_fragment_lista_todos">
+
+    <fragment
+            android:id="@+id/nav_fragment_lista_todos"
+            android:name="com.example.gatosmvvmjavier.ui.fragment.ListaGatos"
+            android:label="Gatitos"
+            tools:layout="@layout/fragment_lista_gatos" >
+        <action
+                android:id="@+id/action_nav_fragment_lista_todos_to_frament_gato"
+                app:destination="@id/gato_fragment"
+                app:popUpTo="@id/nav_fragment_lista_todos" />
+    </fragment>
+    <fragment
+            android:id="@+id/nav_fragment_votos"
+            android:name="com.example.gatosmvvmjavier.ui.fragment.Votos"
+            android:label="Votos"
+            tools:layout="@layout/fragment_votos" />
+    <fragment
+            android:id="@+id/nav_fragment_favoritos"
+            android:name="com.example.gatosmvvmjavier.ui.fragment.Favoritos"
+            android:label="Favoritos"
+            tools:layout="@layout/fragment_favoritos" />
+    <fragment
+            android:id="@+id/nav_fragment_contacto"
+            android:name="com.example.gatosmvvmjavier.ui.fragment.Contacto"
+            android:label="Contacto"
+            tools:layout="@layout/fragment_contacto" />
+    <fragment
+            android:id="@+id/gato_fragment"
+            android:name="com.example.gatosmvvmjavier.ui.fragment.GatoFragment"
+            android:label="Gato"
+            tools:layout="@layout/fragment_gato" />
+</navigation>

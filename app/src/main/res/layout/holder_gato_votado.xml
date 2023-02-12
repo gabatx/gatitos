@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:id="@+id/frameLayout4"
+        android:background="@drawable/fondo_holder_todos_gatos">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:clipToPadding="false">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:background="@drawable/fondo_holder_todos_gatos">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    tools:src="@tools:sample/backgrounds/scenic"
+                    android:id="@+id/imageViewVoto"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="TODO"
+                    android:background="@drawable/fondo_holder_todos_gatos" />
+
+            <ImageView
+                    android:src="@drawable/ic_baseline_icono_me_gusta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/votoPositivo"
+                    android:background="@drawable/fondo_redondo_me_gusta"
+                    app:layout_constraintTop_toBottomOf="@+id/imageViewVoto"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:padding="10dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="16dp"
+                    android:clickable="true" />
+
+            <TextView
+                    android:text="2022-05-04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fechaVoto"
+                    app:layout_constraintStart_toEndOf="@+id/votoPositivo"
+                    app:layout_constraintBottom_toBottomOf="@+id/votoPositivo"
+                    app:layout_constraintTop_toTopOf="@+id/votoPositivo"
+                    app:layout_constraintEnd_toStartOf="@+id/eliminarVoto"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+            <ImageView
+                    android:src="@drawable/ic_baseline_close_24_cerrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eliminarVoto"
+                    app:layout_constraintBottom_toBottomOf="@+id/fechaVoto"
+                    app:layout_constraintTop_toTopOf="@+id/fechaVoto"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@drawable/fondo_corner_eliminar"
+                    android:padding="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:clickable="true"
+                    tools:ignore="ContentDescription" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

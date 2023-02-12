@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.DetalleInformacionFragment"
+        android:id="@+id/frameLayout2">
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline4"
+            app:layout_constraintGuide_begin="20dp"
+            android:orientation="horizontal" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline3"
+            app:layout_constraintGuide_begin="20dp"
+            android:orientation="vertical" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline2"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="20dp" />
+
+    <TextView
+            android:text="Weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TituloWeight"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="@+id/guideline4"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+    <TextView
+            android:text="Temperament"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tituloTeperament"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/weight"
+            android:layout_marginTop="24dp" />
+
+    <TextView
+            android:text="Origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tituloOrigin"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/temperament"
+            android:layout_marginTop="24dp" />
+
+    <TextView
+            android:text="Life span"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tituloLifeSpan"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/origin"
+            android:layout_marginTop="24dp" />
+
+    <TextView
+            android:text="Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tituloDescription"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/lifeSpan"
+            android:layout_marginTop="24dp" />
+
+    <TextView
+            android:text="3 - 5 kg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weight"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/TituloWeight"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp" />
+
+    <TextView
+            android:text="Active, Energetic, Independent, Intelligent, Gentle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/temperament"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/tituloTeperament"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2" />
+
+    <TextView
+            android:text="Egypt EG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/origin"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/tituloOrigin"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+    <TextView
+            android:text="Egypt EG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lifeSpan"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/tituloLifeSpan"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+    <TextView
+            android:text="The Abyssian..."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/description"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/tituloDescription"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

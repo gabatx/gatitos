@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:backgroundTint="@color/me_gusta_desactivado"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/ic_baseline_favorite_border_24"
+            android:id="@+id/floatingActionButtonFavorito"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            tools:ignore="ContentDescription" />
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:toolbarId="@+id/toolbar"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:contentScrim="@color/azul_claro">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="256dp"
+                    tools:src="@tools:sample/backgrounds/scenic"
+                    android:id="@+id/imagenGato"
+                    android:scaleType="centerCrop"
+                    android:background="@color/azul_claro" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_width="match_parent"
+                android:theme="@style/ToolbarTheme"
+                app:buttonGravity="top"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:background="@color/azul">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/azul"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="#FFC107"
+                app:tabMode="fixed"
+                app:tabTextColor="#FFFFFF">
+
+            <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Información" />
+
+            <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stats" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- IMPORTANTE A MANO EN COLOCAR EN app:layout_behavior="@string/appbar_scrolling_view_behavior" -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/azul_claro"
+            app:tint="@color/white"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_baseline_menu_book_wikipedia_24"
+            android:id="@+id/floatingActionButtonWikipedia"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="@string/appbar_scrolling_view_behavior"
+            app:layout_anchorGravity="bottom|right|end"
+            app:layout_anchor="@id/appbar"
+            android:focusable="true" />
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/frameLayout_contenedor">
+
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:src="@drawable/ic_baseline_icono_me_gusta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:id="@+id/floatingActionButtonVoto"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="24dp"
+            app:backgroundTint="@color/me_gusta_desactivado"
+            app:tint="@color/white"
+            tools:ignore="ContentDescription,KeyboardInaccessibleWidget,SpeakableTextPresentCheck" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
